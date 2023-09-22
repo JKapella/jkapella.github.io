@@ -1,0 +1,130 @@
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main {
+    width: 800px;
+    margin: 0 auto;
+}
+
+ @font-face {
+   font-family: slack;
+   src: url(SlacksideOne-Regular.ttf);
+ }
+
+ @font-face {
+   font-family: pangolin;
+   src: url(Pangolin-Regular.ttf);
+ }
+
+ h1 {
+    font-family: slack;
+    font-size: 6rem;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: black;
+ }
+
+ h2 {
+    font-family: pangolin;
+    font-size: 1.7rem;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+ }
+
+ h3 {
+  padding: 0px;
+  position:relative;
+  top:-20px;
+ }
+
+ ul.horizontal-list-nav {
+   list-style: none;
+ }
+
+ ul.horizontal-list-pages {
+  list-style: none;
+}
+
+ .horizontal-list-nav li{
+   display: inline-block;
+   min-width: 180px;
+   text-align: center;
+ }
+
+ .horizontal-list-pages li{
+  display: inline-block;
+  min-width: 350px;
+  text-align: center;
+}
+
+ .mainphoto {
+   max-width: 100%;
+   height: auto;
+ }
+
+ .icons {
+  width: 30px;
+  height: auto;
+ }
+
+ .page-link {
+  font-family: pangolin;
+  font-size: 1.7rem;
+ }
+
+ a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.portrait-container-james {
+  height: 250;
+  width: 226;
+  background-image: url(pics/jk-portrait-500-452.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+
+.portrait-container-shaun {
+  height: 250;
+  width: 226;
+  background-image: url(pics/shaun-portrait-500-452.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+
+.portrait-container-elle {
+  height: 250;
+  width: 226;
+  background-image: url(pics/elle-portrait-500-452.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+
+.portrait-container-harry {
+  height: 250;
+  width: 226;
+  background-image: url(pics/harry-portrait-500-452.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+
+.bio-container {
+  display: inline-block;
+  width: 530px;
+  margin-left: 20px;
+}
+
+.member-bio {
+  margin: 20px 0px 20px 0px;
+}
