@@ -15,11 +15,6 @@ body {
    src: url(SlacksideOne-Regular.ttf);
  }
 
- @font-face {
-   font-family: pangolin;
-   src: url(Pangolin-Regular.ttf);
- }
-
  h1 {
     font-family: slack;
     font-size: 6rem;
@@ -31,16 +26,16 @@ body {
  }
 
  h2 {
-    font-family: pangolin;
     font-size: 1.7rem;
     border-style: solid;
     border-width: 0px 0px 1px 0px;
+    margin: 50px 0px 50px 0px;
  }
 
  h3 {
   padding: 0px;
   position:relative;
-  top:-20px;
+  /* top:-30px; */
  }
 
  ul.horizontal-list-nav {
@@ -74,7 +69,6 @@ body {
  }
 
  .page-link {
-  font-family: pangolin;
   font-size: 1.7rem;
  }
 
@@ -123,8 +117,19 @@ body {
   display: inline-block;
   width: 530px;
   margin-left: 20px;
+  /* position: relative; */
+  position: absolute;
+  top: 0px;
 }
 
 .member-bio {
   margin: 20px 0px 20px 0px;
+  position: relative;
+
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0px 20px 0px;
 }
