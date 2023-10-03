@@ -26,17 +26,6 @@ h1 {
     background-image: none;
  }
 
- /* h1 {
-  font-family: slack;
-  font-size: 12rem;
-  padding-left: 30px;
-  color: rgb(255, 255, 255);
-  background-image: url(pics/band_mobile.jpg);
-  background-size: cover;
-  margin-right: -30px;
-  margin-left: -30px;
-} */
-
  h2 {
     font-size: 1.7rem;
     border-style: solid;
@@ -148,7 +137,7 @@ iframe {
   padding: 20px 0px 20px 0px;
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 1000px) {
   body {
     font-size: 23px;
 }
