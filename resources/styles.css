@@ -174,7 +174,11 @@ h2 {
 h3 {
   padding: 0px;
   position: static;
-  font-size: 3rem;
+  font-size: 3.5rem;
+ }
+
+ p {
+  font-size: 40px;
  }
 
 .icons {
