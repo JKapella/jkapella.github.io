@@ -1,13 +1,8 @@
 body {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    font-size: 18px;
+    font-size: 19px;
     font-family: 'Courier New', Courier, monospace;
-}
-
-.main {
-    width: 800px;
-    margin: 0 auto;
 }
 
  @font-face {
@@ -15,7 +10,12 @@ body {
    src: url(SlacksideOne-Regular.ttf);
  }
 
- h1 {
+ @font-face {
+  font-family: barlow;
+  src: url(Barlow-Regular.ttf);
+}
+
+h1 {
     font-family: slack;
     font-size: 6rem;
     padding-top: 10px;
@@ -23,49 +23,65 @@ body {
     margin-top: 60px;
     margin-bottom: 30px;
     color: black;
+    background-image: none;
  }
+
+ /* h1 {
+  font-family: slack;
+  font-size: 12rem;
+  padding-left: 30px;
+  color: rgb(255, 255, 255);
+  background-image: url(pics/band_mobile.jpg);
+  background-size: cover;
+  margin-right: -30px;
+  margin-left: -30px;
+} */
 
  h2 {
     font-size: 1.7rem;
     border-style: solid;
     border-width: 0px 0px 1px 0px;
-    margin: 50px 0px 50px 0px;
+    margin: 40px 0px 40px 0px;
  }
 
  h3 {
   padding: 0px;
   position:relative;
-  /* top:-30px; */
  }
+
+p {
+  font-family: barlow;
+ }
+
+.main {
+  width: 800px;
+  margin: 0 auto;
+}
 
  ul.horizontal-list-nav {
    list-style: none;
  }
 
- ul.horizontal-list-pages {
-  list-style: none;
-}
-
  .horizontal-list-nav li{
    display: inline-block;
-   min-width: 180px;
+   min-width: 230px;
    text-align: center;
  }
-
- .horizontal-list-pages li{
-  display: inline-block;
-  min-width: 350px;
-  text-align: center;
-}
 
  .mainphoto {
    max-width: 100%;
    height: auto;
+   display: inline;
+ }
+
+ .mainphoto-mobile {
+  display: none;
  }
 
  .icons {
-  width: 30px;
+  width: 40px;
   height: auto;
+  margin-top: 30px;
  }
 
  .page-link {
@@ -117,7 +133,6 @@ body {
   display: inline-block;
   width: 530px;
   margin-left: 20px;
-  /* position: relative; */
   position: absolute;
   top: 0px;
 }
@@ -125,11 +140,107 @@ body {
 .member-bio {
   margin: 20px 0px 20px 0px;
   position: relative;
-
 }
 
 iframe {
   display: block;
   margin: 0 auto;
   padding: 20px 0px 20px 0px;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 23px;
+}
+
+  .main {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  h1 {
+    font-family: slack;
+    font-size: 12rem;
+    padding-left: 30px;
+    color: rgb(255, 255, 255);
+    background-image: url(pics/band_mobile.jpg);
+    background-size: cover;
+    margin-right: -30px;
+    margin-left: -30px;
+  }
+
+ .mainphoto {
+  max-width: 100%;
+  height: auto;
+  display: none;
+}
+
+h2 {
+  font-size: 4rem;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  margin: 60px 0px 60px 0px;
+}
+
+h3 {
+  padding: 0px;
+  position: static;
+  font-size: 3rem;
+ }
+
+.icons {
+  width: 80px;
+  height: auto;
+  margin-top: 30px;
+ }
+
+ .horizontal-list-nav li{
+  display: inline-block;
+  min-width: 290px;
+  text-align: center;
+}
+
+.portrait-container-james {
+  height: 500px;
+  width: 452px;
+  background-size: cover;
+  display: block;
+  margin: 30px auto;
+}
+
+.portrait-container-shaun {
+  height: 500px;
+  width: 452px;
+  background-size: cover;
+  display: block;
+  margin: 30px auto;
+}
+
+.portrait-container-elle {
+  height: 500px;
+  width: 452px;
+  background-size: cover;
+  display: block;
+  margin: 30px auto;
+}
+
+.portrait-container-harry {
+  height: 500px;
+  width: 452px;
+  background-size: cover;
+  display: block;
+  margin: 30px auto;
+}
+
+.bio-container {
+  display: block;  
+  position: static;
+  width: auto;
+  margin: 30px 0;
+}
+
+.member-bio {
+  margin: 60px 0px 20px 0px;
+  position: static;
+}
 }
