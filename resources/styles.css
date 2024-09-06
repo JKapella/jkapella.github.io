@@ -1,239 +1,97 @@
 body {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    font-size: 19px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-family: 'Courier New', Courier, monospace;
 }
-
- @font-face {
-   font-family: slack;
-   src: url(SlacksideOne-Regular.ttf);
- }
 
  @font-face {
   font-family: barlow;
   src: url(Barlow-Regular.ttf);
 }
 
-h1 {
-    font-family: slack;
-    font-size: 6rem;
-    padding-top: 10px;
-    padding-bottom: 40px;
-    margin-top: 60px;
-    margin-bottom: 30px;
-    color: black;
-    background-image: none;
- }
-
- h2 {
-    font-size: 1.7rem;
-    border-style: solid;
-    border-width: 0px 0px 1px 0px;
-    margin: 40px 0px 40px 0px;
- }
-
- h3 {
-  padding: 0px;
-  position:relative;
- }
-
-p {
-  font-family: barlow;
- }
-
-.main {
-  width: 800px;
-  margin: 0 auto;
+@font-face {
+  font-family: paytone;
+  src: url(PaytoneOne-Regular.ttf);
 }
 
- ul.horizontal-list-nav {
-   list-style: none;
- }
-
- .horizontal-list-nav li{
-   display: inline-block;
-   min-width: 230px;
-   text-align: center;
- }
-
- .mainphoto {
-   max-width: 100%;
-   height: auto;
-   display: inline;
- }
-
- .mainphoto-mobile {
-  display: none;
- }
-
- .icons {
-  width: 40px;
-  height: auto;
-  margin-top: 30px;
- }
-
- .page-link {
-  font-size: 1.7rem;
- }
-
- a:link, a:visited, a:hover, a:active {
-  text-decoration: none;
-  color: inherit;
-}
-
-.portrait-container-james {
-  height: 250;
-  width: 226;
-  background-image: url(pics/jk-portrait-500-452.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: inline-block;
-}
-
-.portrait-container-shaun {
-  height: 250;
-  width: 226;
-  background-image: url(pics/shaun-portrait-500-452.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: inline-block;
-}
-
-.portrait-container-elle {
-  height: 250;
-  width: 226;
-  background-image: url(pics/elle-portrait-500-452.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: inline-block;
-}
-
-.portrait-container-harry {
-  height: 250;
-  width: 226;
-  background-image: url(pics/harry-portrait-500-452.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: inline-block;
-}
-
-.bio-container {
-  display: inline-block;
-  width: 530px;
-  margin-left: 20px;
-  position: absolute;
-  top: 0px;
-}
-
-.member-bio {
-  margin: 20px 0px 20px 0px;
-  position: relative;
-}
-
-iframe {
-  display: block;
-  margin: 0 auto;
-  padding: 20px 0px 20px 0px;
-}
-
-@media (max-width: 1000px) {
-  body {
-    font-size: 23px;
-}
-
-  .main {
-    width: 100%;
-    padding: 10px 20px;
-  }
-
-  h1 {
-    font-family: slack;
-    font-size: 12rem;
-    padding-left: 30px;
-    color: rgb(255, 255, 255);
-    background-image: url(pics/band_mobile.jpg);
-    background-size: cover;
-    margin-right: -30px;
-    margin-left: -30px;
-  }
-
- .mainphoto {
-  max-width: 100%;
-  height: auto;
-  display: none;
+.title {
+  font-family: paytone;
+  text-align: center;
+  color: rgb(193, 0, 0);
+  font-size: calc(2rem + 4.5vw);
+  font-weight: 300;
+  line-height: 1.2;
 }
 
 h2 {
-  font-size: 4rem;
-  border-style: solid;
-  border-width: 0px 0px 1px 0px;
-  margin: 60px 0px 60px 0px;
+  font-family: paytone;
+  color: rgb(193, 0, 0);
+  font-weight: 300;
+  line-height: 1.2;
+  border-bottom-color: rgb(193, 0, 0);
 }
 
-h3 {
-  padding: 0px;
-  position: static;
-  font-size: 3.5rem;
- }
-
- p {
-  font-size: 40px;
- }
-
-.icons {
-  width: 80px;
-  height: auto;
-  margin-top: 30px;
- }
-
- .horizontal-list-nav li{
-  display: inline-block;
-  min-width: 290px;
-  text-align: center;
+.red-border {
+  border-color: rgb(193, 0, 0);
+  --bs-border-color: rgb(193, 0, 0);
 }
 
-.portrait-container-james {
-  height: 500px;
-  width: 452px;
-  background-size: cover;
-  display: block;
-  margin: 30px auto;
+
+
+h4 {
+  color: rgb(255, 255, 255);
+  font-size: calc(1.1rem + .3vw);
 }
 
-.portrait-container-shaun {
-  height: 500px;
-  width: 452px;
-  background-size: cover;
-  display: block;
-  margin: 30px auto;
+.nav-link {
+  color: rgb(193, 0, 0);
+  font-family: barlow;
 }
 
-.portrait-container-elle {
-  height: 500px;
-  width: 452px;
-  background-size: cover;
-  display: block;
-  margin: 30px auto;
+.nav-link:hover {
+  color: #ffffff;
 }
 
-.portrait-container-harry {
-  height: 500px;
-  width: 452px;
-  background-size: cover;
-  display: block;
-  margin: 30px auto;
+svg {
+  fill: rgb(193, 0, 0);
 }
 
-.bio-container {
-  display: block;  
-  position: static;
-  width: auto;
-  margin: 30px 0;
+li a:hover,
+li a:hover svg {
+  color: white; /* Text color on hover */
+  fill: white;  /* SVG color on hover */
 }
 
-.member-bio {
-  margin: 60px 0px 20px 0px;
-  position: static;
+li a {
+  color: rgb(193, 0, 0); 
+  transition: color 0.3s ease; 
 }
+
+li a svg {
+  fill: rgb(193, 0, 0); 
+  transition: fill 0.3s ease; 
+  width: 24px; 
+  height: 24px; 
+}
+
+@media (min-width: 600px) {
+  .title {
+    font-size: calc(2.5rem + 4.5vw);
+  }
+  li a svg {
+    width: 30px; 
+    height: 30px; 
+  }
+}
+@media (min-width: 1000px) {
+  .title {
+    font-size: 8rem;
+  }
+  li a svg {
+    width: 50px; 
+    height: 50px; 
+  }
+  .nav-link {
+    font-size: 1.15rem;
+  }
 }
